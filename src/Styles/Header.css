@@ -1,0 +1,57 @@
+.logo{
+    height:50px;
+} 
+.navbar {
+    background-color: rgb(29, 28, 28);
+    color: white;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width:auto;
+  }
+  
+  .navbar-left {
+    font-size:200rem;
+    /* margin-right:900px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 4vmax; */
+  }
+  
+  .navbar a {
+    color: rgb(180, 180, 180);
+    font-size: 0.9vmax;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 300;
+    margin: 1vmax;
+    text-decoration: none;
+  }
+  
+  .navbar span {
+    color: rgba(180, 180, 180, 0.644);
+    font-size: 1vmax;
+    font-weight: 100;
+  margin-left: 2rem;
+  }
+  
+  .navbar-right {
+    /* margin-right:400rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+  }
+  
+  .icons{
+    font-size:50px;
+
+  }
