@@ -1,0 +1,62 @@
+/* Example Footer Styles */
+.container {
+    height: 65vh;
+    background-color: #1f262b;
+    color: #9A9ABD;
+    padding: 3rem 9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo img {
+    position: absolute;
+    z-index: 2;
+    width: 100px; /* Adjust the width of the logo */
+}
+
+.content {
+    margin: 2rem 9rem;
+    display: flex;
+    flex-direction: row;
+    gap:20rem;
+}
+
+.community,
+.Documentation {
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+   margin-right:8rem;
+    flex: 1; /* Divide the content space equally between the two sections */
+}
+
+h2 {
+    color: white;
+    font-size: 10rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    font-size: 7rem;
+    list-style: none;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.bottom-row {
+    margin-top: 4rem;
+    font-size: 10rem;
+    flex-basis: 100%; /* Make these divs take full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Align the bottom row items to the bottom */
+    padding: 2rem 1rem;
+}
+
+.deserved,
+.labs {
+    font-size: 10rem;
+    text-align: center;
+}
+
+/* You can further style .deserved and .labs as needed */

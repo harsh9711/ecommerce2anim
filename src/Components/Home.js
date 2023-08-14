@@ -17,9 +17,7 @@ import "../Styles/Misc.scss";
 
 const yellow= "#fff100",
 pink= "#ed1e79";
-// red= "#d20120",
-// white= "#fff",
-// brown= "#6d3d0f";
+
 
 const Home = () => { 
    const {freshTopic,freshTopic2,tedTalks}=data;
@@ -90,19 +88,6 @@ const Home = () => {
       btnBgcolor={yellow}
       btnColor={pink}
       /> 
-       <Section 
-      h3={tedTalks.heading} 
-      text={tedTalks.text} 
-      imgSize={"30%"}
-      btnText={tedTalks.btn}
-      imgSrc={freshTopic3Img}
-      backgroundColor={pink}
-      headingColor={yellow}
-      textColor={yellow}
-      btnBgcolor={yellow}
-      btnColor={pink}
-      hasBtn={false}
-      />  
      <Footer/>
       <Misc/> 
     </div>

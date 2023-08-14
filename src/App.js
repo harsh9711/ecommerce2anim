@@ -8,7 +8,6 @@ import Contact from './Components/Contact'
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
 import Errorpage from "./Errorpage";
 
-
 const App = () => {
   return (
     <>
@@ -20,9 +19,9 @@ const App = () => {
           <Route path="/about" element={<About/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path ="/singleProduct/:id" element={<SingleProduct/>}/>
-          {/* <Route path="/product" element={<Products/>}/> */}
+          <Route path="/product" element={<Products/>}/>
           <Route path ="*" element={<Errorpage/>}/>
-        </Routes> 
+        </Routes>     
       </Router>
     </>
   );

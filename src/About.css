@@ -1,0 +1,377 @@
+::-moz-selection { /* Code for Firefox */
+  color: rgba(31, 38, 43, 1);
+  background-color: rgba(63, 232, 189, 1);
+}
+::selection {
+  color: rgba(31, 38, 43, 1);
+    background-color: rgba(63, 232, 189, 1);
+}
+
+body {
+
+  justify-content:center;
+width:100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  } 
+  .background-image{
+    margin-top:5.4rem;
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 110%;
+      background-image: linear-gradient(180deg, rgba(31,38,42,0) 0%, rgba(31,38,42,1) 100%);
+      border-color: transparent;
+      border-style: solid;
+    
+    }
+
+  .headings {
+    align-items: center;
+    position: absolute;
+    top: 52%;
+    left: 7%;
+    width: 100%;
+    /* text-align: center; */
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  } 
+
+  .headings {
+    align-items: center;
+    position: absolute;
+    top: 52%;
+    left: 7%;
+    width: 100%;
+    /* text-align: center; */
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(8%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideUp2 {
+    0% {
+      transform: translateY(40%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .headings h1 {
+    font-size: 13rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: white;
+    /* padding: 5rem 1rem; */
+    border-radius: 5px;
+    margin: 0;
+    /* animation: fadesUp 1.3s ease-in-out 0.5s; */
+  }
+  
+  .headings h5 {
+    letter-spacing: 0.1px;
+   margin-right:85rem;
+    font-size: 2.5rem;
+  margin-top: 0.1rem; /* Adjust margin to reduce the gap */
+  color: white;
+ 
+  } 
+  .heading1{
+    animation: slideUp 3s ease-in-out, fadeIn 5s; 
+  } 
+  .heading2{
+    animation: slideUp2 3s ease-in-out ;
+  }
+
+.button.primary {
+  margin-top: 6rem;
+  justify-content: center;
+  height:150px;
+  width:400px;
+  display: inline-flex;
+  align-items: center;
+  /* padding: 10px 20px; */
+  font-size: 4rem; /* Adjust the font size to make the text smaller */
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition:  0.3s ease, color 0.3s ease;
+  background-color: #3fe8bd;
+  color: #313a45;
+  /* animation: slideUp 3s ease-in-out 1.5s; */
+}
+
+.button.primary:hover {
+  background-color: #ffff;
+}
+
+.button.primary span {
+  margin-right: 1rem; /* Add margin between text and image */
+}
+
+.button.primary .images {
+  font-weight: 300;
+  justify-content: center;
+  text-align: center;
+  width: 8rem;
+  height: auto;
+  transition: transform 0.2s ease;
+  opacity: 0; /* Set initial opacity to 0 to hide the image */
+  animation: fadeInImage 1s ease-in-out 1s forwards; /* Apply fadeInImage animation with delay after slideUp2 animation */
+}
+
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+    /* margin-right: 1rem; */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    margin-right: 3rem;
+  }
+}
+
+.button.primary:hover .images {
+  opacity: 1; /* Display the image on button hover */
+}
+.card-container1 {
+  background-color: #1f262b;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem; 
+  height:70rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 3rem; /* Add padding to the sides */
+}
+
+.card1 {
+ background-color: #c0eeee;
+  margin-top: 3rem;
+  /* max-width:90rem; */
+  height:55rem;
+  padding: 0rem; /* Adjust padding as needed */
+  border-radius: 50px;
+  width: 300%; /* Use a percentage width to make the card responsive */
+  max-width: 1000%; /* Set a maximum width for the card */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.card1 h2 {
+  margin: 1rem 9rem;
+  font-size: 3.5rem; /* Adjust font size as needed */
+  margin-bottom: 0.5rem; /* Adjust margin as needed */
+}
+
+.card1 p {
+  color:#9A9ABD;
+  margin: 2rem 9rem;
+  font-size: 2.6rem; /* Adjust font size as needed */
+  /* color: #777; */
+}
+.card1 img {
+ width:150px; 
+ padding:1rem 6rem;
+}
+.thirdslide {
+  height:280vh;
+    background-color: #dfe5fa;
+  color:black;
+  padding: 15rem;
+  text-align: center;
+  /* Add margin to separate from card-container */
+}
+
+.thirdslide h2 {
+  font-weight: 600;
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+.thirdslide p {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+@keyframes fadeInImage2{
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+    /* margin-right: 1rem; */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    margin-right: 3rem;
+  }
+}
+.button.secondary {
+  animation: fadeInImage2 1s ease-in-out 11s forwards; /* Apply fadeInImage animation with delay after slideUp2 animation */
+  margin-top: 5rem;
+  justify-content: center;
+  height:130px;
+  width:500px;
+  /* margin-top: -40rem; */
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 20px;
+  font-size: 2.5rem; /* Adjust the font size to make the text smaller */
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition:  0.3s ease, color 0.3s ease;
+  background-color: #b2c0f2;
+  color: #313a45;
+  /* animation: slideUp 3s ease-in-out 1.5s; */
+}
+
+.button.secondary:hover {
+  background-color: #ffff;
+}
+
+.button.secondary span {
+  margin-right: 1rem; /* Add margin between text and image */
+}
+
+.button.secondary .images {
+  font-weight: 300;
+  justify-content: center;
+  text-align: center;
+  width: 8rem;
+  height: auto;
+  transition: transform 0.2s ease;
+  opacity: 0; /* Set initial opacity to 0 to hide the image */
+  animation: fadeInImage 1s ease-in-out 1s forwards; /* Apply fadeInImage animation with delay after slideUp2 animation */
+}
+
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+    /* margin-right: 1rem; */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    margin-right: 3rem;
+  }
+}
+
+.button.secondary:hover .images {
+  opacity: 1; /* Display the image on button hover */
+}
+
+.thirdslide1 {
+  display: flex;
+  align-items: center; 
+  margin-top: 4rem; /* Add margin to separate from previous content */
+}
+
+.thirdslide1.image {
+  width:80%;
+  /* ... (previous styles) ... */
+  flex: 1; /* Take available space */
+}
+
+.thirdslide1.content {
+ 
+  flex: 1; /* Take twice the space of the image */
+}
+.imagesdir {
+  width:30%; 
+  max-width: 100px;
+  flex: 1;
+  /* margin-bottom:100rem; */
+}
+
+.headears {
+  flex: 1; /* Take equal space */
+}
+
+.headears h2 {
+  text-align:left;
+  /* margin-right:90rem; */
+  color:black;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-left:75rem;
+}
+
+.headears p {
+  text-align: left;
+  padding:2rem 30rem;
+  margin-left:45rem;
+  width:30%;
+  font-weight: 400;
+  font-size: 2.3rem;
+  /* margin-bottom: 1rem; */
+}
+
+.fourthslide{ 
+  position: absolute;
+  /* top: 10%; */
+  /* left: 50%; */
+  transform: translate(58%, -250%);
+  justify-content: center;
+/* height:20vh; */
+color:white;
+/* padding: 15rem; */
+text-align: center;
+}
+
+.fourthslide h2 {
+  animation: slideUp 3s ease-in-out, fadeIn 5s; 
+padding:0rem 5rem;
+   color:white;
+  font-weight: 600;
+  font-size: 6rem;
+  /* top:180% */
+  /* margin-bottom: 10rem; */
+  color: white;
+} 
+
+.fourthslide p {
+  animation: slideUp2 3s ease-in-out ;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.fourthslide-overlay {
+  position: absolute;
+  top: -1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; /* Place the overlay above the IntroVideo */
+}
+
+
+.imagesdir {
+  flex: 0 0 200px; /* Adjust the width of the image container */
+  padding-right: 20px; /* Add some spacing between image and text */
+}
+
+
